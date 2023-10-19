@@ -1,0 +1,37 @@
+mysql> use gym;
+Database changed
+mysql> show tables;
++---------------+
+| Tables_in_gym |
++---------------+
+| employee      |
+| student       |
++---------------+
+2 rows in set (0.00 sec)
+
+mysql> select*from student;
+Empty set (0.00 sec)
+
+mysql> desc student;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| sno       | int(11)      | YES  |     | NULL    |       |
+| id        | int(11)      | NO   | PRI | 0       |       |
+| name      | varchar(100) | YES  | UNI | NULL    |       |
+| deparment | varchar(100) | YES  | MUL | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+mysql> desc employee;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| sno        | int(11)      | YES  |     | NULL    |       |
+| empid      | int(11)      | YES  |     | NULL    |       |
+| name       | varchar(10)  | YES  |     | NULL    |       |
+| department | varchar(100) | NO   | PRI |         |       |
++------------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql>
