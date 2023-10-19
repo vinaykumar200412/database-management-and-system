@@ -1,0 +1,52 @@
+DATABASECONNECTIVITYUSING PYTHON AND MYSQL
+        AIM:
+To connect the MySQL using PYTHON and to execute the CREATE, INSERT, DELETE, UPDATE and SELECT commandsin MySQL.
+
+       OUTPUT:
+Create a table :
+classroom1 Table created successfully 
+MySQL connection is closed
+Insert the values:
+4 Record inserted successfully into classroom table
+Total number of rows in table:  4
+
+Printing each row
+Course_ID=  CSA0501
+Course_Name=  DBMS
+Classroom_No  =  311
+Total_Students  =  40
+Floor_No  =  3 
+
+Course_ID=  CSA0502
+Course_Name=  DBMS
+Classroom_No  =  312
+Total_Students  =  40
+Floor_No  =  3 
+
+Course_ID=  CSA0503
+Course_Name=  DBMS
+Classroom_No  =  313
+Total_Students  =  40
+Floor_No  =  3 
+
+Course_ID=  CSA0504
+Course_Name=  DBMS
+Classroom_No  =  314
+Total_Students  =  40
+Floor_No  =  3 
+
+MySQL connection is closed
+
+Update the value:
+After updating a record 
+[('CSA0501', 'DBMS', 301, 40, 3), ('CSA0502', 'DBMS', 312, 40, 3), ('CSA0503', 'DBMS', 313, 40, 3), ('CSA0504', 'DBMS', 314, 40, 3), ('CSA0505', 'DBMS', 315, 40, 3), ('CSA0506', 'DBMS', 316, 40, 3)]
+Total number of rows in table:  6
+MySQL connection is closed
+
+Delete the record :
+Number of rows deleted 1
+[('CSA0501', 'DBMS', 301, 40, 3), ('CSA0502', 'DBMS', 312, 40, 3), ('CSA0503', 'DBMS', 313, 40, 3), ('CSA0504', 'DBMS', 314, 40, 3), ('CSA0505', 'DBMS', 315, 40, 3)]
+Total number of rows in table:  5
+MySQL connection is closed
+RESULT: 
+Thus the MySQLis connected using Python and executed the CREATE, INSERT, DELETE, UPDATE and SELECT commandsin MySQL.
