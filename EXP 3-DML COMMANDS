@@ -1,0 +1,59 @@
+mysql> use sse;
+Database changed
+mysql> create table mentees(Regno int(10), Name varchar(20), Dept varchar(4), Adress varchar(10), Fathername varchar(10));
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> insert into mentees values(192225039,"Ramu","CSE","Porur","Ranga");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into mentees values(192224089,"Harini","CIVIL","Egmore","Raju");
+ERROR 1406 (22001): Data too long for column 'Dept' at row 1
+mysql> insert into mentees values(192225030,"SUS","CSE","RJDRY","Raju");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> inert into mentees values(191125031,"Hari","BCM","Veera");
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inert into mentees values(191125031,"Hari","BCM","Veera")' at line 1
+mysql> insert into mentees values(192224030,"Hari","CSE","BCM","Veera");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into mentees values(192226020,"Swetha","CSE","WYRA","Srinivas");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> inert into mentees values(192215221,"Devi","CIVIL","BPL","Sridhar");
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inert into mentees values(192215221,"Devi","CIVIL","BPL","Sridhar")' at line 1
+mysql> insert into mentees values(192220301,"Devi","CSE","BPL","SRI");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select*from mentees;
++-----------+--------+------+--------+------------+
+| Regno     | Name   | Dept | Adress | Fathername |
++-----------+--------+------+--------+------------+
+| 192225039 | Ramu   | CSE  | Porur  | Ranga      |
+| 192225030 | SUS    | CSE  | RJDRY  | Raju       |
+| 192224030 | Hari   | CSE  | BCM    | Veera      |
+| 192226020 | Swetha | CSE  | WYRA   | Srinivas   |
+| 192220301 | Devi   | CSE  | BPL    | SRI        |
++-----------+--------+------+--------+------------+
+5 rows in set (0.00 sec)
+
+mysql> swlwct Name from mentees;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'swlwct Name from mentees' at line 1
+mysql> select Name from mentees;
++--------+
+| Name   |
++--------+
+| Ramu   |
+| SUS    |
+| Hari   |
+| Swetha |
+| Devi   |
++--------+
+5 rows in set (0.00 sec)
+
+mysql> select*from mentees where Name="SUS";
++-----------+------+------+--------+------------+
+| Regno     | Name | Dept | Adress | Fathername |
++-----------+------+------+--------+------------+
+| 192225030 | SUS  | CSE  | RJDRY  | Raju       |
++-----------+------+------+--------+------------+
+1 row in set (0.01 sec)
